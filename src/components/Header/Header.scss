@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+
+    &__nav {
+        display: flex;
+        margin-left: 52px;
+        margin-top: 15px;
+    }
+
+    &__nav > * {
+        margin-right: 30px;
+    }
+
+    &__nav > *:last-child {
+        margin-right: 0;
+    }
+
+    &__contacts {
+        display: flex;
+        margin-left: auto;
+        margin-top: 15px;
+    }
+
+    &__icons {
+        display: flex;
+        margin-left: 47px;
+    }
+
+    &__icons > * {
+        margin-right: 30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__icons > *:last-child {
+        margin-right: 0;
+    }
+}
+
+.logo {
+    width: 140px;
+    height: 24px;
+
+    &__description {
+        color: #E4E5EA;
+        font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+        font-size: 0.625em;
+        margin-top: 10px;
+    }
+
+    &__container {
+        margin-top: 11px;
+    }
+}
+
+.phone {
+    color: #E4E5EA;
+    font-size: 1em;
+    font-weight: 500;
+}
