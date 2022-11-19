@@ -1,10 +1,11 @@
 import { FC } from 'react';
-import { Header, Main } from './components';
+import { Footer, Header, Main } from './components';
 import './App.css';
 
 export const App: FC = () => {
   return <div className="App">
     <Header />
     <Main />
+    <Footer />
   </div>
 };
