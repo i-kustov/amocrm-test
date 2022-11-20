@@ -61,3 +61,40 @@
     font-size: 1em;
     font-weight: 500;
 }
+
+@media (max-width: 1100px) {
+    .phone, .header__icons {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo__container {
+        display: none;
+    }
+
+    .header__nav {
+        margin: 0;
+        width: 100%;
+        justify-content: space-between;
+
+        & > * {
+            margin-right: 0;
+            text-transform: uppercase;
+            font-size: 0.75em;
+        }
+    }
+
+    .header {
+        background-color: #000;
+        position: fixed;
+        padding: 16px 20px;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 425px) {
+    .header__nav > *:last-child {
+        display: none;
+    }
+}

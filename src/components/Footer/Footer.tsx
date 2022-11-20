@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Col } from "./Col";
 import { Link } from "./Link";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 import './Footer.scss';
 
 import telegram from '../../assets/telegram.svg';
@@ -8,6 +9,8 @@ import phone from '../../assets/phone.svg';
 import whatsapp from '../../assets/whatsapp.svg';
 
 export const Footer: FC = () => {
+    const matches = useMediaQuery('(max-width: 1100px)');
+
     return <footer className="footer">
         <div className="footer__content">
             <Col name="О компании">
@@ -26,7 +29,11 @@ export const Footer: FC = () => {
                 <Link>Блог на Youtube</Link>
                 <Link>Вопрос / Ответ</Link>
             </Col>
-            <Col name="Контакты" right increasedIndent>
+            <Col
+                name="Контакты"
+                right={!matches}
+                increasedIndent={!matches}
+            >
                 <Link>+7 555 555-55-55</Link>
                 <div className="footer__icons">
                     <img src={telegram} alt="" />

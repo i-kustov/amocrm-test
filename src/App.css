@@ -97,3 +97,38 @@
     filter: blur(2.5px);
     backdrop-filter: blur(2px);
 }
+
+@media (max-width: 768px) {
+    .App {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    /* .red-ball, .purple-ball, .purple-circle, .red-circle, .red-ball-s {
+        display: none;
+    } */
+
+    .purple-circle {
+        left: 258px;
+        top: 107px;
+    }
+
+    .purple-ball {
+        left: 296px;
+        top: 236px;
+    }
+
+    .red-ball {
+        left: 29px;
+        top: 402px;
+    }
+
+    .red-circle {
+        left: -55px;
+        top: 241px;
+    }
+
+    .red-ball-s {
+        left: 55px;
+        top: 141px;
+    }
+}

@@ -1,9 +1,12 @@
 import { FC } from "react";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { Button } from "../Button";
 import { Gift } from "./Gift";
 import './Main.scss';
 
 export const Main: FC = () => {
+    const matches = useMediaQuery('(max-width: 768px)');
+
     return <main className="main">
         <div className="main__content">
             <div className="main__content-section">
@@ -26,7 +29,7 @@ export const Main: FC = () => {
                 </p>
                 <div className="gifts-container">
                     <Gift
-                        name="Виджеты"
+                        name={matches ? "30 виджетов" : "Виджеты"}
                         text="30 готовых решений"
                     />
                     <Gift
@@ -39,7 +42,7 @@ export const Main: FC = () => {
                         text="отдела продаж и CRM системы"
                     />
                     <Gift 
-                        name="35 дней"
+                        name={matches ? "Месяц AmoCRM" : "35 дней"}
                         text="использования CRM"
                     />
                 </div>

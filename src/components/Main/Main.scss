@@ -57,7 +57,7 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
 
-        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -65,7 +65,7 @@
     }
 }
 
-.gifts-container{
+.gifts-container {
     margin: 40px 0 31px;
     display: flex;
     flex-wrap: wrap;
@@ -79,4 +79,39 @@
 
 .button__wrapper {
     text-align: right;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 95px 15px 55px;
+
+        background: radial-gradient(
+                238.53% 189.02% at 3.2% 3.49%,
+                rgba(255, 246, 233, 0.1) 0%,
+                rgba(26, 29, 35, 0.1) 26.62%,
+                rgba(26, 29, 35, 0.1) 52.1%,
+                rgba(26, 29, 35, 0.01) 70.17%,
+                rgba(26, 29, 35, 0) 100%
+            )
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        backdrop-filter: blur(7.5px);
+
+        &__content {
+            flex-direction: column;
+        }
+    }
+
+    .section-desc {
+        text-align: left;
+        margin-top: 45px;
+    }
+
+    .button__wrapper {
+        display: none;
+    }
+
+    .heading {
+        font-size: 2.25em;
+        line-height: 44px;
+    }
 }

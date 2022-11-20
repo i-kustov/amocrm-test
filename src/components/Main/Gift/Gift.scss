@@ -24,3 +24,30 @@
         color: #e4e5ea;
     }
 }
+
+@media (max-width: 768px) {
+    .gift__name {
+        text-align: left;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.765em;
+        line-height: 16px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        &::before {
+            content: "—  ";
+            background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .gift__text {
+        display: none;
+    }
+}
